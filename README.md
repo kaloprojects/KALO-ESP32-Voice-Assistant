@@ -38,4 +38,4 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - Review & improve reliability of the WifiClientSecure connection
 - Following up on 'Play 8bit audio' issue (Schreibfaul1 Audio.h library)
 - Adding more use case examples in main sketch
-- Including Speechgen.IO TTS API call (hundreds of additional voices)
+- Including SpeechGen.IO TTS API call (hundreds of additional voices)
