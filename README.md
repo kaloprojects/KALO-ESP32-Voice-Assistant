@@ -1,8 +1,15 @@
-# Code Samples
-Code snippets showing how to record I2S audio and store as .wav file on ESP32 with SD card, how to transcribe audio via Deepgram SpeechToText API, how to generate audio from text via TextToSpeech API from OpenAI a/o Google TTS. This repository contains the Demo main sketch 'KALO_ESP32_Voice_Assistant.ino', demonstrating different use case of my 2 libraries 'lib_audio_recording.ino' and 'lib_audio_transcription.ino'.  
+# Summary
+Code snippets showing how to record I2S audio and store as .wav file on ESP32 with SD card, how to transcribe audio via Deepgram SpeechToText API, how to generate audio from text via TextToSpeech API from OpenAI a/o Google TTS. The repository contains the Demo main sketch  'KALO_ESP32_Voice_Assistant.ino', demonstrating different use case of my libraries 'lib_audio_recording.ino' and 'lib_audio_transcription.ino'  
 
 # Features
-See use cases (Demo 1-6) in main sketch 
+Explore the demo use case examples (1-6) in main sketch, summary:
+- Recording Voice Audio with variable length (recording as long a button is pressed), storing as .wav file (with 44 byte header) on SD card  
+- Replay your recorded audio (using Schreibfaul1 <audio.h> library) 
+- Playing Audio streams (e.g. playing music via radio streams with Schreibfaul1 <audio.h> library)
+- STT (SpeechToText), using Deepgram API service (registration needed)  
+- TTS (TextToSpeech), supporting multilingual 6 voices via Open AI API (registration needed)
+- TTS (TextToSpeech), using Google TTS API (no registration needed)  
+- Triggering ESP actions via voice (e.g. triggering GPIO LED pins, addressing dedicated voices by calling their name, playing music on request).
 
 # Hardware
 - ESP32 development board (e.g. ESP32-WROOM-32)
@@ -28,3 +35,4 @@ See use cases (Demo 1-6) in main sketch
 - Review & improve reliability of the WifiClientSecure connection
 - Following up on 'Play 8bit audio' issue (up with Schreibfaul1 Audio.h library)
 - Adding more use case examples in main sketch
+- Including Speechgen.IO TTS API call (hundreds of additional voices)
