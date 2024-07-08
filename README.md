@@ -13,7 +13,7 @@ See use cases (Demo 1-6) in main sketch
 
 # Installation & Customizing
 - No additional libraries needed, all used header.h files should be included in latest Arduino IDE (with ESP32 3.x) framework.
-- Copy all 3 .ino files into same folder (it is one sketch split into 3 Arduino IDE tabs)
+- Copy all 3 .ino files into same folder (it is one sketch, split into 3 Arduino IDE tabs)
 - Update your pin assignments in the header of all 3 .ino files
 - Insert your credentials (ssid, password, OpenAI- API key, Deepgram API key)
 - Define your favorite recording settings (SAMPLE_RATE, BITS_PER_SAMPLE, GAIN_BOOSTER_I2S)
