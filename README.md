@@ -33,6 +33,6 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - Code cleanup, regular updates the upcoming days / weeks
 - Improving performance to archive faster STT response (e.g. keeping connection Alive)
 - Review & improve reliability of the WifiClientSecure connection
-- Following up on 'Play 8bit audio' issue (up with Schreibfaul1 Audio.h library)
+- Following up on 'Play 8bit audio' issue (Schreibfaul1 Audio.h library)
 - Adding more use case examples in main sketch
 - Including Speechgen.IO TTS API call (hundreds of additional voices)
