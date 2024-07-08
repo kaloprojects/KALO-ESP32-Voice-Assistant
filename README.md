@@ -14,7 +14,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 # Hardware
 - ESP32 development board (e.g. ESP32-WROOM-32)
 - I2S digital microphone, e.g. INMP441 [I2S pins 22, 33, 35]          
-- I2S digital audio amplifier, e.g. MAX98357A [I2S pins 25,26,27]
+- I2S audio amplifier, e.g. MAX98357A [I2S pins 25,26,27] with speaker
 - Micro SD Card [VSPI Default pins 5,18,19,23] 
 - RGB LED (status indicator) and Analog Poti (audio volume)
 
