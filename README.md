@@ -11,7 +11,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - STT (SpeechToText), using Deepgram API service (registration needed)  
 - TTS (TextToSpeech), supporting multilingual 6 voices via Open AI API (registration needed)
 - TTS (TextToSpeech), using Google TTS API (no registration needed)  
-- Triggering ESP actions via voice (e.g. triggering GPIO LED pins, addressing dedicated voices by calling their name, playing music on request).
+- Triggering ESP actions via voice (e.g. triggering GPIO LED pins, addressing dedicated voices by calling their name, playing music on request)
 
 # Hardware
 - ESP32 development board (e.g. ESP32-WROOM-32)
@@ -21,7 +21,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - RGB LED (status indicator) and Analog Poti (audio volume)
 
 # Installation & Customizing
-- No additional libraries needed, all header.h files are included in latest Arduino IDE (with ESP32 3.x) framework.
+- No additional libraries needed, all header.h files are included in latest Arduino IDE (with ESP32 3.x) framework
 - Copy all 3 .ino files into same folder (it is one sketch, split into 3 Arduino IDE tabs)
 - Update your pin assignments in the header of all 3 .ino files
 - Insert your credentials (ssid, password, OpenAI API key, Deepgram API key)
