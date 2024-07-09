@@ -149,7 +149,7 @@ void loop()
         // Keep in mind: 8bit files can't be played currently with AUDIO.H, assuming an issue in audio.h library (?)
         // (8bit waves produce only loud (!) noise/distortions only with current AUDIO.H)
         
-        // -> that's why we uncommented below (we use 8 bit wav files for fast file transfer to SpeechToTex service)
+        // -> that's why in commented below (we use 8 bit wav files for fast file transfer to SpeechToTex service)
         // Proposal: try 16bit once (via #define BITS_PER_SAMPLE 16 in lib_audio_recording) to check your hardware .. 
         // .. uncomment once and listen to the record 
          
