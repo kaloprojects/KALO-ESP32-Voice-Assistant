@@ -21,7 +21,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - RGB LED (status indicator) and Analog Poti (audio volume)
 
 # Installation & Customizing
-- Recording and playing audio are working offline, online connection needed for STT and TTS services
+- Recording and playing audio are working offline, online connection needed for STT, TTS and streaming services
 - No additional libraries needed, all header.h files are included in latest Arduino IDE (with ESP32 3.x) framework
 - Copy all 3 .ino files into same folder (it is one sketch, split into 3 Arduino IDE tabs)
 - Update your pin assignments in the header of all 3 .ino files
