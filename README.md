@@ -39,3 +39,4 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - Following up on 'Play 8bit audio' issue (Schreibfaul1 Audio.h library)
 - Adding more use case examples in main sketch
 - Including SpeechGen.IO TTS API call (hundreds of additional voices)
+- Including a OpenAI API library with demo code, using an ESP32 as Voice ChatGPT device
