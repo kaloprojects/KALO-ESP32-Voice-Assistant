@@ -5,7 +5,7 @@
 // ----------------                                                                                              ---------------- 
 // ----------------                Used pins SD Card: VSPI Default pins 5,18,19,23                               ----------------
 // ----------------                Used pins I2S Microphone INMP441: WS 22, SCK 33, SD 35                        ----------------
-// ----------------                Using latests ESP 3.x library (with I2S_std.h)                                ----------------
+// ----------------                Using latest ESP 3.x library (with I2S_std.h)                                 ----------------
 // ----------------                                                                                              ----------------
 // ----------------   bool I2S_Record_Init();                // Initialization (once)                            ----------------
 // ----------------   bool Record_Start( file );             // appending I2S buffer to file (in loop, ongoing)  ----------------
