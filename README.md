@@ -14,13 +14,14 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - Triggering ESP actions via voice (e.g. triggering GPIO LED pins, addressing dedicated voices by calling their name, playing music on request)
 
 # Hardware
-- ESP32 development board (e.g. ESP32-WROOM-32)
+- ESP32 development board (e.g. ESP32-WROOM-32), connected to Wifi
 - I2S digital microphone, e.g. INMP441 [I2S pins 22, 33, 35]          
 - I2S audio amplifier, e.g. MAX98357A [I2S pins 25,26,27] with speaker
 - Micro SD Card [VSPI Default pins 5,18,19,23] 
 - RGB LED (status indicator) and Analog Poti (audio volume)
 
 # Installation & Customizing
+- Recording and playing audio are working offline, online connection needed for STT and TTS services
 - No additional libraries needed, all header.h files are included in latest Arduino IDE (with ESP32 3.x) framework
 - Copy all 3 .ino files into same folder (it is one sketch, split into 3 Arduino IDE tabs)
 - Update your pin assignments in the header of all 3 .ino files
