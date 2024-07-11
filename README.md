@@ -37,7 +37,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - Code cleanup, regular updates the upcoming days / weeks
 - Review & improve reliability of the WifiClientSecure connection
 - Improving performance to archive faster STT response (e.g. keeping connection Alive)
-- Following up on 'Play 8bit audio' issue in Audio.h library
+- Following up on 'Play 8bit audio' issue
 - Adding more use case examples in main sketch
 - Including SpeechGen.IO TTS API call (hundreds of additional voices)
 - Including a OpenAI API library with demo code, using an ESP32 as Voice ChatGPT device
