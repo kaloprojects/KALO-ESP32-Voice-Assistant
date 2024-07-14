@@ -38,7 +38,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - 2024-07-14: Updated version, major changes:
   - WifiClientSecure connection reliablility improved (still not perfect) 
   - STT Deepgram response faster (new total response time average on e.g. 5 sec voice record: ~ 2.5 sec)
-  - user language settings (SST & TTS) added, bug fixing etc.
+  - user language settings (STT & TTS) added, bug fixing etc.
 - 2024-07-08: First drop, already working, not finally cleaned up (just posted this drop on some folks request)
 
 # Next steps
