@@ -136,7 +136,7 @@ void loop()
     
     // Before we start any recording we stop any earlier Audio Output or streaming (e.g. radio)
     if (audio_play.isRunning())
-    {  audio_play.connecttohost("");    // 'audio_play.stopSong()' wouldn't be enough (SST wouldn't reconnect)
+    {  audio_play.connecttohost("");    // 'audio_play.stopSong()' wouldn't be enough (STT Deepgram wouldn't reconnect)
     }
            
     //Start Recording
