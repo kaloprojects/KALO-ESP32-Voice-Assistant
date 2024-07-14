@@ -31,6 +31,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - Toggle DEBUG flag to true (displaying Serial.print details) or false (for final usage)
 
 # Updates
+- 2024-07-14: Updated version: WifiClientSecure connection reliablility improved, STT Deepgram response faster (current average on a 5 second voice record: less 3 seconds)
 - 2024-07-08: First drop, already working, not finally cleaned up (just posted this drop on some folks request)
 
 # Next steps
