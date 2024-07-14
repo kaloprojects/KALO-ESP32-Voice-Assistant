@@ -32,7 +32,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 
 # Known issues
 - WifiClientSecure connection not reliable (assuming RAM heap issue in WifiClientSecure.h library), rarely freezing (e.g. after 10 mins)
-- Minor issue: Recording with low resolution (8bit audio) recommended for SST (reason: reading file time from SD Card halved), but can't be played (for controling purposes) on ESP32 with current AUDIO.H library
+- Minor issue: Recording with low resolution (8bit audio) recommended for SST (reason: reading file time from SD Card halved, fast and reliable SST response), but can't be played (for controling purposes) on ESP32 with current AUDIO.H library
 
 # Updates
 - 2024-07-14: Updated version: WifiClientSecure connection reliablility improved, STT Deepgram response faster (new average on a 5 second voice record: about 2-3 sec)
