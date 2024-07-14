@@ -27,7 +27,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - Update your pin assignments in the header of all 3 .ino files
 - Insert your credentials (ssid, password, OpenAI API key, Deepgram API key)
 - Define your favorite recording settings (SAMPLE_RATE, BITS_PER_SAMPLE, GAIN_BOOSTER_I2S) in lib_audio_recording.ino header
-- Define your Deepgram language in lib_audio_transcription.ino (optional_param += "&language=en-US")
+- Define your language settings (Google TTS in KALO_ESP32_Voice_Assistant.ino, Deepgram STT in lib_audio_transcription.ino header)
 - Toggle DEBUG flag to true (displaying Serial.print details) or false (for final usage)
 
 # Known issues
