@@ -35,7 +35,7 @@
 
 #define TIMEOUT_DEEPGRAM   8    // max. waiting time [sec] for Deepgram transcription response     
 
-#define STT_KEYWORDS     "&keywords=KALO&keywords=techiesms"      // helping Deepgram to listen exactly for hose words
+#define STT_KEYWORDS            "&keywords=KALO&keywords=techiesms"      // optional, forcing Deepgram to listen exactly
 
 
 // --- PRIVATE credentials & user favorites -----  
