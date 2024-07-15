@@ -23,8 +23,6 @@
 #include <WiFiClientSecure.h>   // only here needed
 /* #include <SD.h>              // library also needed, but already included in main.ino: */
 
-
-
 // --- defines & macros --------
 
 #ifndef DEBUG                   // user can define favorite behaviour ('true' displays addition info)
@@ -32,6 +30,9 @@
 #  define DebugPrint(x);        if(DEBUG){Serial.print(x);}   /* do not touch */
 #  define DebugPrintln(x);      if(DEBUG){Serial.println(x);} /* do not touch */ 
 #endif
+
+
+// --- PRIVATE credentials & user favorites -----  
 
 #define TIMEOUT_DEEPGRAM   8    // max. waiting time [sec] for Deepgram transcription response     
 
@@ -41,9 +42,6 @@
                                  // keep EMPTY ("") if you want Deepgram to detect & understand 'your' language automatically, 
                                  // language abbreviation examples: "en", "en-US", "en-IN", "de" etc.
                                  // all see here: https://developers.deepgram.com/docs/models-languages-overview
-
-
-// --- PRIVATE credentials & user favorites -----  
 
 const char* deepgramApiKey =     "...";   // ## INSERT your Deepgram credentials !
 
