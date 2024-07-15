@@ -35,7 +35,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - Minor issue: Recording with low resolution (8bit audio) recommended for SST (reason: reading file time from SD Card halved, fast and reliable SST response), but can't be played (for controling purposes) on ESP32 with current AUDIO.H library
 
 # Updates
-- 2024-07-14: Updated version, major changes:
+- 2024-07-14: Updated version:
   - WifiClientSecure connection reliablility improved (still not perfect) 
   - STT Deepgram response faster (new total response time average on e.g. 5 sec voice record: ~ 2.5 sec)
   - user language settings (STT & TTS) added, bug fixing etc.
