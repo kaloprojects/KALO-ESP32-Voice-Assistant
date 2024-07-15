@@ -37,15 +37,15 @@
 
 #define STT_KEYWORDS            "&keywords=KALO&keywords=techiesms"      // optional, forcing Deepgram to listen exactly
 
-
-// --- PRIVATE credentials & user favorites -----  
-
-const char* deepgramApiKey =     "...";   // ## INSERT your Deepgram credentials !
-
 #define STT_LANGUAGE       "en"  // forcing single language: e.g. "de" (German), reason: improving recognition quality
                                  // keep EMPTY ("") if you want Deepgram to detect & understand 'your' language automatically, 
                                  // language abbreviation examples: "en", "en-US", "en-IN", "de" etc.
                                  // all see here: https://developers.deepgram.com/docs/models-languages-overview
+
+
+// --- PRIVATE credentials & user favorites -----  
+
+const char* deepgramApiKey =     "...";   // ## INSERT your Deepgram credentials !
 
 
 // --- global vars -------------
