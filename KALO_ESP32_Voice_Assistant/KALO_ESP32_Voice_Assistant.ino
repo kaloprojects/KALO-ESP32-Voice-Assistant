@@ -212,9 +212,7 @@ void loop()
            // ## Demo 6 - Playing Internet live streams, triggered by keyword (example: speak a sentence with "Radio" included)
            // -> Play any Internet live streams
            if (transcription.indexOf("radio") != -1 || /*German*/ transcription.indexOf("Radio") != -1)
-           { audio_play.connecttohost( "https://liveradio.swr.de/sw282p3/swr3/play.mp3" );  
-             // side effect (observation: AUDIO.H streaming side effect to websockets ?: 
-             // currently a reboot needed to reconnect to Deepgram sockets (currently under investigation)             
+           { audio_play.connecttohost( "https://liveradio.swr.de/sw282p3/swr3/play.mp3" );                           
            }
            
         }
