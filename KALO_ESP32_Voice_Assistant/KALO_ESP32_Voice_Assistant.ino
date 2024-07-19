@@ -21,8 +21,10 @@
 
 #include <WiFi.h>         // only included here
 #include <SD.h>           // also needed in other tabs (.ino) 
-#include <Audio.h>        // only needed for PLAYING Audio (via I2S Amplifier, e.g. MAX98357) with ..
-                          // .. Audio.h library from Schreibfaul1: https://github.com/schreibfaul1/ESP32-audioI2S
+
+#include <Audio.h>        // needed for PLAYING Audio (via I2S Amplifier, e.g. MAX98357) with ..
+                          // Audio.h library from Schreibfaul1: https://github.com/schreibfaul1/ESP32-audioI2S
+                          // .. ensure you have actual version (July 18, 2024 or newer needed for 8bit wav files!)
 
 
 // --- PRIVATE credentials -----
@@ -152,17 +154,12 @@ void loop()
     { 
       if ( recorded_seconds > 0.4 )   // short btn TOUCH (e.g. <0.4 secs) will be ignored (used for 'audio_play.stopSong' only)
       {
-        // ## Demo 1 - PLAY recorded AUDIO file from SD file
-        // Keep in mind: 8bit files can't be played currently with AUDIO.H, assuming an issue in audio.h library (?)
-        // (8bit waves produce only loud (!) noise/distortions only with current AUDIO.H)
+        // ## Demo 1 - PLAY your own recorded AUDIO file (from SD card)
+        // Hint to 8bit: you need AUDIO.H library from July 18,2024 or later (otherwise 8bit produce only loud (!) noise)
+        // we commented out Demo 1 to jump to Demo 2 directly  .. uncomment once if you want to listen to your record !
         
-        // -> that's why commented out below (we use 8 bit wav files for fast file transfer to SpeechToText service)
-        // Recommendation: try 16bit once (via #define BITS_PER_SAMPLE 16 in lib_audio_recording) to check your hardware .. 
-        // .. uncomment once and listen to the record 
-         
         /*audio_play.connecttoFS(SD, AUDIO_FILE );              // play your own recorded audio  
-        while (audio_play.isRunning()) {audio_play.loop();}     // wait here until done (just for Demo purposes) */ 
-
+        while (audio_play.isRunning()) {audio_play.loop();}     // wait here until done (just for Demo purposes)  */
         
         // ## Demo 2 [SpeechToText] - Transcript the Audio (waiting here until done) 
         led_RGB(HIGH,HIGH,LOW);  // BLUE means: 'Deepgram server creats transcription'
