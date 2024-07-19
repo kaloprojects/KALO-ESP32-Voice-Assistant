@@ -5,6 +5,7 @@ The repository contains the Demo main sketch  'KALO_ESP32_Voice_Assistant.ino', 
 
 # Features
 Explore the demo use case examples (1-6) in main sketch, summary:
+- Recording and playing audio are working offline, online connection needed for STT, TTS and streaming services
 - Recording Voice Audio with variable length (recording as long a button is pressed), storing as .wav file (with 44 byte header) on SD card  
 - Replay your recorded audio (using Schreibfaul1 <audio.h> library) 
 - Playing Audio streams (e.g. playing music via radio streams with Schreibfaul1 <audio.h> library)
@@ -21,8 +22,8 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - RGB LED (status indicator) and Analog Poti (audio volume)
 
 # Installation & Customizing
-- Recording and playing audio are working offline, online connection needed for STT, TTS and streaming services
-- No additional libraries needed, all header.h files are included in latest Arduino IDE (with ESP32 3.x) framework
+- Required: Arduino IDE with ESP32 libray 3.0.x (based on ESP-IDF 5.1). Older 2.x ESP framework miss the new I2S driver (driver/i2s_std.h)
+- Required: AUDIO.H library 'ESP32-audioI2S.zip' from Schreibfaul1. Install latest zip  (3.0.11g from June 18, 2024 or newer !)
 - Copy all 3 .ino files into same folder (it is one sketch, split into 3 Arduino IDE tabs)
 - Update your pin assignments in the header of all 3 .ino files
 - Insert your credentials (ssid, password, OpenAI API key, Deepgram API key)
