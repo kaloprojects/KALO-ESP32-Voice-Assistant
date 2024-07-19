@@ -44,7 +44,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 # Next steps
 - Code cleanup, regular updates .. ongoing
 - Review & improve reliability of WifiClientSecure connection .. ongoing
-- Following up on 'Play 8bit audio' issue
+- Following up on 'Play 8bit audio' issue - Done (2024-07-18), latest AUDIO.H (since 2024-07-18) allows to play 8bit wav too
 - Adding more use case examples in main sketch
 - Including SpeechGen.IO TTS API call (hundreds of additional voices)
 - Including a OpenAI API library with demo code, using an ESP32 as Voice ChatGPT device
