@@ -24,7 +24,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 # Installation & Customizing
 - Required: Arduino IDE with ESP32 libray 3.0.x (based on ESP-IDF 5.1). Older 2.x ESP framework miss the new I2S driver (driver/i2s_std.h)
 - Required: AUDIO.H library 'ESP32-audioI2S.zip' from Schreibfaul1. Install latest zip  (3.0.11g from June 18, 2024 or newer !)
-- Copy all 3 .ino files into same folder (it is one sketch, split into 3 Arduino IDE tabs)
+- Copy all 3 .ino files in 'KALO-ESP32-Voice-Assistant' into same folder (it is one sketch, split into 3 Arduino IDE tabs)
 - Update your pin assignments in the header of all 3 .ino files
 - Insert your credentials (ssid, password, OpenAI API key, Deepgram API key)
 - Define your favorite recording settings (SAMPLE_RATE, BITS_PER_SAMPLE, GAIN_BOOSTER_I2S) in lib_audio_recording.ino header
