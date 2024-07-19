@@ -22,7 +22,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - RGB LED (status indicator) and Analog Poti (audio volume)
 
 # Installation & Customizing
-- Required: Arduino IDE with ESP32 libray 3.0.x (based on ESP-IDF 5.1). Older 2.x ESP framework miss the new I2S driver (driver/i2s_std.h)
+- Required: Arduino IDE with ESP32 libray 3.0.x (based on ESP-IDF 5.1). Older 2.x ESP framework fail because new I2S driver missed
 - Required (for playing Audio on ESP32): AUDIO.H library [ESP32-audioI2S.zip](https://github.com/schreibfaul1/ESP32-audioI2S) from Schreibfaul1. Install latest zip  (3.0.11g from July 18, 2024 or newer)
 - Copy all 3 .ino files of 'KALO-ESP32-Voice-Assistant' into same folder (it is one sketch, split into 3 Arduino IDE tabs)
 - Update your pin assignments in the header of all 3 .ino files
