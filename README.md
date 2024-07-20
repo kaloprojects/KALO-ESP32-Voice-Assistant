@@ -33,7 +33,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 
 # Known issues
 - WifiClientSecure connection not reliable (assuming RAM heap issue in WifiClientSecure.h library), rarely freezing (e.g. after 10 mins)
-- Minor issue: Recording with low resolution (8bit audio) recommended for SST (reason: reading file time from SD Card halved, fast and reliable SST response), but can't be played (for controling purposes) on ESP32 with current AUDIO.H library
+- 8bit Audio cant be played with AUDIO.H library - solved with latest ESP32-audioI2.zip update (July 18)
 
 # Updates
 - 2024-07-14: Updated version:
