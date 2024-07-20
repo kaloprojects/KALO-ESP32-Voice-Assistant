@@ -8,7 +8,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - Recording and playing audio are working offline, online connection needed for STT, TTS and streaming services
 - Recording Voice Audio with variable length (recording as long a button is pressed), storing as .wav file (with 44 byte header) on SD card  
 - Replay your recorded audio (using Schreibfaul1 <audio.h> library) 
-- Playing Audio streams (e.g. playing music via radio streams with Schreibfaul1 <audio.h> library)
+- Playing Audio streams (e.g. playing music via radio streams with <audio.h> library)
 - STT (SpeechToText), using Deepgram API service (registration needed)  
 - TTS (TextToSpeech), supporting multilingual 6 voices via Open AI API (registration needed)
 - TTS (TextToSpeech), using Google TTS API (no registration needed)  
