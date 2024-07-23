@@ -33,7 +33,6 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 
 # Known issues
 - WifiClientSecure connection not reliable (assuming RAM heap issue in WifiClientSecure.h library), rarely freezing (e.g. after 10 mins)
-- 8bit Audio can't be played with AUDIO.H library - solved with latest ESP32-audioI2.zip update (July 18)
 
 # Updates
 - 2024-07-22: Misc. enhancements, STT connectivity improved, code cleaned up
