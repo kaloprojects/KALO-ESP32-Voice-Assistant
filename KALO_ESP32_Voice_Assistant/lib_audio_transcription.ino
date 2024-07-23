@@ -124,7 +124,7 @@ String SpeechToText_Deepgram( String audio_filename )
   size_t bytesRead;
   while (file.available()) 
   { bytesRead = file.read(buffer, sizeof(buffer));
-    /* if (bytesRead > 0) */ delay(50); client.write(buffer, bytesRead);   // sending WAV AUDIO data       
+    if (bytesRead > 0) {client.write(buffer, bytesRead);}   // sending WAV AUDIO data       
   }
   file.close();
   DebugPrintln("> All bytes sent, waiting Deepgram transcription");
