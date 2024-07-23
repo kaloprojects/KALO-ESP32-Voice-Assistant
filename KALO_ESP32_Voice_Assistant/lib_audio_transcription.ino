@@ -152,7 +152,7 @@ String SpeechToText_Deepgram( String audio_filename )
 
   // ---------- closing connection to Deepgram 
   client.stop();     // observation: unfortunately needed, otherwise the 'audio_play.openai_speech() in AUDIO.H not working !
-                     // so we close for now, but will be opened again on next call (or regularly via in Deepgram_KeepAlive())
+                     // so we close for now, but will be opened again on next call (and regularly in Deepgram_KeepAlive())
                      
     
   // ---------- Parsing json response, extracting transcription etc.
