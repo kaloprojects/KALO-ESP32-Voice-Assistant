@@ -36,6 +36,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - 8bit Audio can't be played with AUDIO.H library - solved with latest ESP32-audioI2.zip update (July 18)
 
 # Updates
+- 2024-07-22: Misc. enhancements, STT connectivity improved, code cleaned up
 - 2024-07-14: Updated version:
   - WifiClientSecure connection reliablility improved (still not perfect) 
   - STT Deepgram response faster (new total response time average on e.g. 5 sec voice record: ~ 2.5 sec). Recommendation: It's worth trying 8Khz/8bit once, STT response ~1 sec (Note: Using complete sentences instead of single words improves recognition quality)
