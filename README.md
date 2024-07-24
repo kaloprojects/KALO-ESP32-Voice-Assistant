@@ -51,9 +51,10 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - Including a OpenAI API library with demo code, using an ESP32 as Voice ChatGPT device
 
 
+.
 
 # Demo Video
-Short video clip to present SpeechToText and TextTo Speech (without Open AI, ESP32 just repeating user voice), workflow: 
+Short video clip, presenting SpeechToText and TextTo Speech (without Open AI, ESP32 just repeating user voice), workflow: 
 - Recording Audio (8Khz/8bit) to SD card,
 - transcribe recorded voice via Deepgram API, repeat the spoken sentences via Goggle TTS:
 
