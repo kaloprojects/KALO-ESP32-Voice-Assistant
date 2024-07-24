@@ -53,9 +53,10 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 
 
 # Demo Video
-Short video clip, workflow: 
+Short video clip to present SpeechToText and TextTo Speech (without Open AI, ESP32 just repeating user voice), workflow: 
 - Recording Audio (8Khz/8bit) to SD card,
 - transcribe recorded voice via Deepgram API, repeat the spoken sentences via Goggle TTS:
+
 
 [![Video Screenshot](https://github.com/user-attachments/assets/038905a8-3064-44c1-8eb7-e14cc6da94ab)](https://dark-controller.com/wp-content/uploads/2024/07/KALO_VoiceAssitant_Video01.mp4)
 
