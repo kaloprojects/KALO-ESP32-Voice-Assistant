@@ -207,9 +207,6 @@ void Deepgram_KeepAlive()        // should be called each 5 seconds about (to ov
   } 
    
   // ---------- TX - Sending DATA to Deepgram Server .....
-  // sending a dummy 16Khz/8bit audio wav with header (20 values only, 0x80 for silence)
-  // [0x40,0x00,0x00,0x00] = filesize 64 bytes,  [0x14,0x00,0x00,0x00] = 20 wav values (~ 1 millisec audio only)
-  
   /* Deepgram does support a dedicated KeepAlive feature, but unfortunately not for pre-recorded audio
   // for streaming we could use this snippet:
   String payload = "{\"type\": \"KeepAlive\"}";   
@@ -221,6 +218,8 @@ void Deepgram_KeepAlive()        // should be called each 5 seconds about (to ov
   client.println();   
   client.println( payload );
   // so for 'prerecorded audio' we use our own workflow below: ... */
+  // sending a dummy 16Khz/8bit audio wav with header (20 values only, 0x80 for silence)
+  // [0x40,0x00,0x00,0x00] = filesize 64 bytes,  [0x14,0x00,0x00,0x00] = 20 wav values (~ 1 millisec audio only)
   
   uint8_t empty_wav[] = {
   0x52,0x49,0x46,0x46, 0x40,0x00,0x00,0x00, 0x57,0x41,0x56,0x45,0x66,0x6D,0x74,0x20, 
