@@ -56,7 +56,8 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 .
 
 # Demo Videos
-Short video clip, presenting Recording & SpeechToText & TextTo Speech (without Open AI, ESP32 just repeating user voice), workflow: 
+Short video clip, presenting Recording & SpeechToText & TextToSpeech (without Open AI, ESP32 just repeating user voice).
+Workflow: 
 - Recording user voice, storing audio .wav file (8Khz/8bit) to SD card,
 - STT: transcribe recorded voice via Deepgram API,
 - TTS: repeat spoke sentence via Goggle TTS (a/o triggering e.g. LED via voice):
