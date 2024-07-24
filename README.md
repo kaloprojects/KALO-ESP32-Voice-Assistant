@@ -59,7 +59,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 Short video clip, presenting Recording & SpeechToText & TextToSpeech (without Open AI, ESP32 just repeating user voice): 
 - Recording user voice, storing audio .wav file (8Khz/8bit) to SD card,
 - STT: transcribe pre-recorded voice via Deepgram API,
-- TTS: repeat spoke sentence via Goggle TTS (a/o triggering e.g. LED via voice):
+- TTS: repeat spoke sentence via Goggle TTS voice (a/o triggering e.g. LED via voice):
 
 [![Video Screenshot](https://github.com/user-attachments/assets/038905a8-3064-44c1-8eb7-e14cc6da94ab)](https://dark-controller.com/wp-content/uploads/2024/07/KALO_VoiceAssitant_Video01.mp4)
 
