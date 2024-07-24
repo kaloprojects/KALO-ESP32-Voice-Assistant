@@ -53,3 +53,4 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 Short video clip, workflow: Recording Audio (8Khz/8bit) to SD card, transcribe recorded voice via Deepgram API, repeat the spoken sentences via Goggle TTS:
 [Video](https://dark-controller.com/wp-content/uploads/2024/07/KALO_VoiceAssitant_Video01.mp4)
 
+![Video Screenshot](https://github.com/user-attachments/assets/fd3a09a6-5953-4fbf-8a1f-5d6a14dd1c75)
