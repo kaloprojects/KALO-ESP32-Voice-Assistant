@@ -49,3 +49,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - Adding more use case examples in main sketch
 - Including SpeechGen.IO TTS API call (hundreds of additional voices)
 - Including a OpenAI API library with demo code, using an ESP32 as Voice ChatGPT device
+
+Short video clip, workflow: Recording Audio (8Khz/8bit) to SD card, transcribe recorded voice via Deepgram API, repeat the spoken sentences via Goggle TTS:
+[Video](https://dark-controller.com/wp-content/uploads/2024/07/KALO_VoiceAssitant_Video01.mp4)
+
