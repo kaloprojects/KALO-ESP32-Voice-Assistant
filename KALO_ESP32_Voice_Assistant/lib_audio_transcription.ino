@@ -217,7 +217,8 @@ void Deepgram_KeepAlive()        // should be called each 5 seconds about (to ov
   client.println("Content-Length: " + payload.length());
   client.println();   
   client.println( payload );
-  // so for 'prerecorded audio' we use our own workflow below: ... */
+  // so for 'pre-recorded audio' we use our own workflow below: ... */
+  
   // sending a dummy 16Khz/8bit audio wav with header (20 values only, 0x80 for silence)
   // [0x40,0x00,0x00,0x00] = filesize 64 bytes,  [0x14,0x00,0x00,0x00] = 20 wav values (~ 1 millisec audio only)
   
