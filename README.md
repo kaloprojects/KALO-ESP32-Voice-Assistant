@@ -50,7 +50,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - Including SpeechGen.IO TTS API call (hundreds of additional voices)
 - Including a OpenAI API library with demo code, using an ESP32 as Voice ChatGPT device
 
-#
+
 
 # Demo Video
 Short video clip, workflow: 
