@@ -1,5 +1,5 @@
 # Summary
-Code snippets showing how to record I2S audio and store as .wav file on ESP32 with SD card, how to transcribe pre-recorded audio via Deepgram _SST (SpeechToText)_ API, how to generate audio from text via _TTS (TextToSpeech)_ API from OpenAI a/o Google TTS. Triggering ESP32 actions via Voice.
+Code snippets showing how to record I2S audio and store as .wav file on ESP32 with SD card, how to transcribe pre-recorded audio via Deepgram _STT (SpeechToText)_ API, how to generate audio from text via _TTS (TextToSpeech)_ API from OpenAI a/o Google TTS. Triggering ESP32 actions via Voice.
 
 The repository contains the Demo main sketch  'KALO_ESP32_Voice_Assistant.ino', demonstrating different use case of my libraries 'lib_audio_recording.ino' and 'lib_audio_transcription.ino'  
 
