@@ -35,7 +35,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - WifiClientSecure connection not reliable (assuming RAM heap issue in WifiClientSecure.h library), rarely freezing (e.g. after 10 mins)
 
 # Updates
-- 2024-07-22: Misc. enhancements, STT connection reliablility improved, code cleaned up
+- 2024-07-22: Misc. enhancements, STT connection reliablility improved further, code cleaned up
 - 2024-07-14: Updated version:
   - WifiClientSecure connection reliablility improved (still not perfect) 
   - STT Deepgram response faster (new total response time average on e.g. 5 sec voice record: ~ 2.5 sec). Recommendation: It's worth trying 8Khz/8bit once, STT response ~1 sec (Note: Using complete sentences instead of single words improves recognition quality)
