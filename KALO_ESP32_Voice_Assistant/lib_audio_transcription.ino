@@ -43,8 +43,7 @@ const char* deepgramApiKey =    "...";   // ## INSERT your Deepgram credentials 
 
 #define TIMEOUT_DEEPGRAM   12   // define your preferred max. waiting time [sec] for Deepgram transcription response     
 
-#define STT_KEYWORDS            "&keywords=KALO&keywords=Janthip&keywords=Google"  // optional, forcing STT to listen exactly 
-/*#define STT_KEYWORDS          "&keywords=KALO&keywords=Sachin&keywords=Google"   // optional, forcing STT to listen exactly */
+#define STT_KEYWORDS          "&keywords=KALO&keywords=Sachin&keywords=Google"   // optional, forcing STT to listen exactly
 
 
 // --- global vars -------------
