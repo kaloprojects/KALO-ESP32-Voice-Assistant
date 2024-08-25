@@ -65,5 +65,5 @@ Short video clip, presenting Recording & SpeechToText & TextToSpeech (without Op
 
 <br>
 Featured video from other users & friends:<br>
-@techiesms: using my Deepgram transcription library in his IoT projects: <br>https://www.youtube.com/watch?v=j0EEFXmikvk- 
+@techiesms: using my Deepgram transcription STT library in his IoT projects: <br>https://www.youtube.com/watch?v=j0EEFXmikvk- 
 
