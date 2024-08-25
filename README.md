@@ -63,4 +63,5 @@ Short video clip, presenting Recording & SpeechToText & TextToSpeech (without Op
 
 [![Video Screenshot](https://github.com/user-attachments/assets/038905a8-3064-44c1-8eb7-e14cc6da94ab)](https://dark-controller.com/wp-content/uploads/2024/07/KALO_VoiceAssitant_Video01.mp4)
 
+Video of one of my friends (techiesms), using this library for Speech-To-Text transcription in his projects: [Speech to Text Conversion using ESP32 Board](https://www.youtube.com/watch?v=j0EEFXmikvk)
 
