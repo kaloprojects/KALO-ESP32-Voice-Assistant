@@ -56,7 +56,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 .
 
 # Demo Videos
-1. Short video clip, presenting Recording & SpeechToText & TextToSpeech (without Open AI, ESP32 is not 'answering', just parroting my voice). Workflow: 
+Short video clip, presenting Recording & SpeechToText & TextToSpeech (without Open AI, ESP32 is not 'answering', just parroting my voice). Workflow: 
 - Recording user voice, storing audio .wav file (8KHz/8bit) to SD card,
 - STT: transcribe pre-recorded voice via Deepgram API,
 - TTS: repeat spoken sentence with Goggle TTS voice (a/o triggering e.g. LED via voice):
@@ -64,6 +64,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 [![Video Screenshot](https://github.com/user-attachments/assets/038905a8-3064-44c1-8eb7-e14cc6da94ab)](https://dark-controller.com/wp-content/uploads/2024/07/KALO_VoiceAssitant_Video01.mp4)
 
 
-2. here a video of techiesms, using my library for Speech-To-Text transcription in his projects:
+
+Video from techiesms, using my library for Speech-To-Text transcription in his projects:
 [Speech to Text Conversion using ESP32 Board](https://www.youtube.com/watch?v=j0EEFXmikvk)
 
