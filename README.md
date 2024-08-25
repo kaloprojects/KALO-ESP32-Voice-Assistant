@@ -65,5 +65,6 @@ Short video clip, presenting Recording & SpeechToText & TextToSpeech (without Op
 
 <br>
 Featured links from other users:
+- Rec
 - techiesms, using my Deepgram transcription library in his projects:[Speech to Text Conversion using ESP32 Board](https://www.youtube.com/watch?v=j0EEFXmikvk)
 
