@@ -63,7 +63,7 @@ Short video clip, presenting Recording & SpeechToText & TextToSpeech (without Op
 
 [![Video Screenshot](https://github.com/user-attachments/assets/038905a8-3064-44c1-8eb7-e14cc6da94ab)](https://dark-controller.com/wp-content/uploads/2024/07/KALO_VoiceAssitant_Video01.mp4)
 
+<br>
 Featured links from other users:
-- techiesms, using my Deepgram transcription library in his projects: https://www.youtube.com/watch?v=j0EEFXmikvk
-- 
+- techiesms, using my Deepgram transcription library in his projects: <br>https://www.youtube.com/watch?v=j0EEFXmikvk- 
 
