@@ -43,6 +43,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - 2024-07-08: First drop, already working, not finally cleaned up (just posted this drop on some folks request)
 
 # Next steps
+- 2024/12 Update: TTS with Speechgen.IO voices will be published soon (upcoming 2 weeks)
 - Code cleanup, regular updates .. ongoing
 - Review & improve reliability of WifiClientSecure connection .. ongoing
 - Fixing 'Play 8bit audio' issue - Done (2024-07-18), latest AUDIO.H (since 2024-07-18) supports 8bit wav format
