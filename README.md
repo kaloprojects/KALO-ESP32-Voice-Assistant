@@ -1,10 +1,10 @@
 # Summary
-Code snippets showing how to _record I2S audio_ and store as .wav file on ESP32 with SD card, how to transcribe pre-recorded audio via _STT (SpeechToText)_ Deepgram API, how to generate audio from text via _TTS (TextToSpeech)_ API from OpenAI a/o Google TTS. Triggering ESP32 actions via Voice.
+Code snippets showing how to _record I2S audio_ and store as .wav file on ESP32 with SD card, how to transcribe pre-recorded audio via _STT (SpeechToText)_ Deepgram API, how to generate audio from text via _TTS (TextToSpeech)_ API from Google TTS or OpenAI TTS or (new) SpeechGen.IO. Triggering ESP32 actions via Voice.
 
-The repository contains the Demo main sketch  'KALO_ESP32_Voice_Assistant.ino', demonstrating different use case of my libraries 'lib_audio_recording.ino' and 'lib_audio_transcription.ino'  
+The repository contains the Demo main sketch  'KALO_ESP32_Voice_Assistant.ino', demonstrating different use case of my libraries 'lib_audio_recording.ino', 'lib_audio_transcription.ino' and (new) 'lib_TTS_SpeechGen.ino' 
 
 # Features
-Explore the demo use case examples (1-6) in main sketch, summary:
+Explore the demo use case examples in main sketch, summary:
 - Recording and playing audio are working offline, online connection needed for STT, TTS and streaming services
 - Recording Voice Audio with variable length (recording as long a button is pressed), storing as .wav file (with 44 byte header) on SD card  
 - Replay your recorded audio (using Schreibfaul1 <audio.h> library) 
@@ -13,7 +13,7 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - STT (SpeechToText), using Deepgram API service (registration needed)  
 - TTS (TextToSpeech), using Google TTS API (no registration needed)  
 - TTS (TextToSpeech), supporting multilingual 6 voices via Open AI API (registration needed)
-- TTS (TextToSpeech), NEW: SpeechGen.IO voices (not free, payment needed)  
+- TTS (TextToSpeech), NEW: added function for SpeechGen.IO voices (not free, payment needed)  
 
 # Hardware
 - ESP32 development board (e.g. ESP32-WROOM-32), connected to Wifi
@@ -33,26 +33,21 @@ Explore the demo use case examples (1-6) in main sketch, summary:
 - Toggle DEBUG flag to true (displaying Serial.print details) or false (for final usage)
 
 # Known issues
-- Earlier WifiClientSecure connection issues seems solved (with KALO 2025-01-06 Update & arduino-esp32ESP32 3.1.x)
+- Earlier WifiClientSecure connection issues seems solved (with KALO 2025-01-06 Update & arduino-esp32 3.1.x)
 - Google TTS support short sentences only (Google limitation), non-free services (OpenAI and SpeechGen.IO) are not limited.
 - TTS: Only OpenAI voices are multi-lingual (supporting multiple languages in same request), Google & SpeechGen.IO request language parameter/voice
 
 # Updates
 - 2025-01-06: NEW library for TTS Speechgen.IO (hundreds of voices) 
 - 2025-01-06: Cleaned code, connection reliability issues solved, response time improved
-- 2024-07-22: Misc. enhancements, STT connection reliablility improved further, code cleaned up
+- 2024-07-22: Misc. enhancements, WifiClientSecure reliablility workarounds, code cleaned up
+- 2024-07-18: 'Play 8bit audio' issue soved (latest AUDIO.H support 8bit wav format)
 - 2024-07-14: WifiClientSecure connection reliablility improved (still not perfect)
 - 2024-07-14: STT Deepgram response faster (new total response time average on e.g. 5 sec voice record: ~ 2.5 sec).
 - 2024-07-08: First drop, already working, not finally cleaned up (just posted this drop on some folks request)
 
 # Next steps
-- 2024/12 Update: TTS with Speechgen.IO voices will be published soon (upcoming 2 weeks)
-- Code cleanup, regular updates .. ongoing
-- Review & improve reliability of WifiClientSecure connection .. ongoing
-- Fixing 'Play 8bit audio' issue - Done (2024-07-18), latest AUDIO.H (since 2024-07-18) supports 8bit wav format
-- Adding more use case examples in main sketch
-- Including _SpeechGen.IO_ TTS API call (hundreds of additional voices). Coded already, unfortunaltly failed since ESP 3.x framework update
-- Including a _OpenAI API library_ with demo code, using an ESP32 as _Voice ChatGPT_ device
+- currently no major updates planned, enjoy the libraries :) 
 
 
 .
