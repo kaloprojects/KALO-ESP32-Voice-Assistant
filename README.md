@@ -25,17 +25,17 @@ Explore the demo use case examples in main sketch, summary:
 # Installation & Customizing
 - Required (updated Jan. 6, 2025): Arduino IDE with ESP32 libray 3.1.x (based on ESP-IDF 5.3.x). Older 2.x ESP framework fail because new I2S driver missed
 - Required (for playing Audio on ESP32): AUDIO.H library [ESP32-audioI2S.zip](https://github.com/schreibfaul1/ESP32-audioI2S). Install latest zip  (3.0.11g from July 18, 2024 or newer)
-- Copy all 3 .ino files of 'KALO-ESP32-Voice-Assistant' into same folder (it is one sketch, split into 3 Arduino IDE tabs)
-- Update your pin assignments in the header of all 3 .ino files
-- Insert your credentials (ssid, password, OpenAI API key, Deepgram API key)
+- Copy all .ino files of 'KALO-ESP32-Voice-Assistant' into same folder (it is one sketch, split into multiple Arduino IDE tabs)
+- Update your pin assignments & wlan settings (ssid, password) in the .ino header files
+- Update headers with personal credentials (Deepgram API key, optional: OpenAI API key, SpeechGen Token)
 - Define your favorite recording settings (SAMPLE_RATE, BITS_PER_SAMPLE, GAIN_BOOSTER_I2S) in lib_audio_recording.ino header
 - Define your language settings (Google TTS in KALO_ESP32_Voice_Assistant.ino, Deepgram STT in lib_audio_transcription.ino header)
 - Toggle DEBUG flag to true (displaying Serial.print details) or false (for final usage)
 
 # Known issues
-- Earlier WifiClientSecure connection issues seems solved (with KALO 2025-01-06 Update & arduino-esp32 3.1.x)
-- Google TTS support short sentences only (Google limitation), non-free services (OpenAI and SpeechGen.IO) are not limited.
-- TTS: Only OpenAI voices are multi-lingual (supporting multiple languages in same request), Google & SpeechGen.IO request language parameter/voice
+- Earlier WifiClientSecure connection issues seem solved (with KALO 2025-01-06 Update & arduino-esp32 3.1.x)
+- Google TTS support short sentences only (Google limitation), non-free services (OpenAI and SpeechGen.IO) are not length limited.
+- TTS: Only OpenAI voices are multi-lingual (supporting multiple languages in same request), Google & SpeechGen.IO request language parameter/voices
 
 # Updates
 - 2025-01-06: NEW library for TTS Speechgen.IO (hundreds of voices) 
