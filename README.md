@@ -40,8 +40,8 @@ Explore the demo use case examples in main sketch, summary:
 # Updates
 - 2025-01-06: NEW library for TTS Speechgen.IO (hundreds of voices) 
 - 2025-01-06: Cleaned code, connection reliability issues solved, response time improved
-- 2024-07-22: Misc. enhancements, WifiClientSecure reliablility workarounds, code cleaned up
-- 2024-07-18: 'Play 8bit audio' issue soved (latest AUDIO.H support 8bit wav format)
+- 2024-07-22: Misc. enhancements, WifiClientSecure reliability workarounds, code cleaned up
+- 2024-07-18: 'Play 8bit audio' issue solved (latest AUDIO.H support 8bit wav format)
 - 2024-07-14: WifiClientSecure connection reliablility improved (still not perfect)
 - 2024-07-14: STT Deepgram response faster (typical response time on e.g. 5 sec voice record: ~ 2.5 sec).
 - 2024-07-08: First drop, already working, not finally cleaned up (just posted this drop on some folks request)
