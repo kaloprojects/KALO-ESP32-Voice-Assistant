@@ -10,10 +10,10 @@ Explore the demo use case examples in main sketch, summary:
 - Replay your recorded audio (using Schreibfaul1 <audio.h> library) 
 - Playing Audio streams (e.g. playing music via radio streams with <audio.h> library)
 - Triggering ESP actions via voice (e.g. triggering GPIO LED pins, addressing dedicated voices by calling their name, playing music on request)
-- STT (SpeechToText), using Deepgram API service (registration needed)  
-- TTS (TextToSpeech), using Google TTS API (no registration needed)  
-- TTS (TextToSpeech), supporting multilingual 6 voices via Open AI API (registration needed)
-- TTS (TextToSpeech), NEW: added function for SpeechGen.IO voices (not free, payment needed)  
+- STT (SpeechToText): Deepgram API service (registration needed)  
+- TTS (TextToSpeech): Google TTS free API (no registration needed)  
+- TTS (TextToSpeech), Open AI API (6 multilingual 6 voices, registration needed)
+- TTS (TextToSpeech), NEW: SpeechGen.IO voices (many voices, not free, payment needed)  
 
 # Hardware
 - ESP32 development board (e.g. ESP32-WROOM-32), connected to Wifi
