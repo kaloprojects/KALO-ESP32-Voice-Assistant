@@ -48,7 +48,7 @@ Explore the demo use case examples in main sketch, summary:
 
 # Next steps
 - currently no major updates planned, enjoy the libraries :)
-- i might add another project example next: 'ESP32 Voice ChatGPT device' (using same libraries)
+- i might add another project example next: 'ESP32 Voice OpenAI ChatGPT device' (using same C libraries)
 
 
 .
