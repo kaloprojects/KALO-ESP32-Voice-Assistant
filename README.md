@@ -47,7 +47,8 @@ Explore the demo use case examples in main sketch, summary:
 - 2024-07-08: First drop, already working, not finally cleaned up (just posted this drop on some folks request)
 
 # Next steps
-- currently no major updates planned, enjoy the libraries :) 
+- currently no major updates planned, enjoy the libraries :)
+- i might add another project example next: 'ESP32 Voice ChatGPT device' (using same libraries)
 
 
 .
