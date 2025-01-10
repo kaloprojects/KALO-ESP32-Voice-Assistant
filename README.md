@@ -34,7 +34,7 @@ Explore the demo use case examples in main sketch, summary:
 
 # Known issues
 - Earlier WifiClientSecure connection issues seem solved (with KALO 2025-01-06 Update & arduino-esp32 3.1.x)
-- Google TTS support short sentences only (Google limitation), non-free services (OpenAI and SpeechGen.IO) are not length limited.
+- Google TTS support short sentences only (Google limitation), non-free services (OpenAI and SpeechGen.IO) are not limited in length.
 - TTS: Only OpenAI voices are multi-lingual (supporting multiple languages in same request), Google & SpeechGen.IO request language parameter/voices
 
 # Updates
