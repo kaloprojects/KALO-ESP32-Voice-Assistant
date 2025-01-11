@@ -226,7 +226,7 @@ void loop()
     
            // Demo example [by DEFAULT always]: .. speaking with an OpenAI voice (select one of the 6 voices by random)
            String Voices[6] = { "alloy", "echo", "fable", "onyx", "nova", "shimmer" };
-           int random_voice = random(5);
+           int random_voice = random(6);
            Serial.println( "OpenAI '" + Voices[random_voice] + "' speaking: [" + transcription +"]");
            
            // Play TTS OpenAI
