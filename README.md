@@ -12,7 +12,7 @@ Explore the demo use case examples in main sketch, summary:
 - Triggering ESP actions via voice (e.g. triggering GPIO LED pins, addressing dedicated voices by calling their name, playing music on request)
 - STT (SpeechToText): Deepgram API service (registration needed)  
 - TTS (TextToSpeech): Google TTS free API (no registration needed)  
-- TTS (TextToSpeech): Open AI API (6 multilingual 6 voices, registration needed)
+- TTS (TextToSpeech): Open AI API (6 multilingual voices, registration needed)
 - TTS (TextToSpeech): #NEW#: SpeechGen.IO voices (many voices, not free, payment needed)  
 
 # Hardware
