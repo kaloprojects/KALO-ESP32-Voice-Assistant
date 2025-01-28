@@ -63,9 +63,8 @@ Short video clip, presenting Recording & SpeechToText & TextToSpeech (without Op
 
 [![Video Screenshot](https://github.com/user-attachments/assets/038905a8-3064-44c1-8eb7-e14cc6da94ab)](https://dark-controller.com/wp-content/uploads/2024/07/KALO_VoiceAssitant_Video01.mp4)
 
-<br>
-Featured video from other users & friends (using my libraries in their IoT projects):
 
+Featured video from other users & friends (using my libraries in their IoT projects):
 - @techiesms (August 2024): [FASTEST! Speech to Text Conversion using ESP32 Board](https://www.youtube.com/watch?v=j0EEFXmikvk)
 - @techiesms (August 2024): [Portable AI Voice Assistant using ESP32 & Gemini AI](https://www.youtube.com/watch?v=zvR9DTfMwPE)
 
