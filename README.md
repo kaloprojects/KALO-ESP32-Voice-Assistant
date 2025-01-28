@@ -64,7 +64,7 @@ Short video clip, presenting Recording & SpeechToText & TextToSpeech (without Op
 [![Video Screenshot](https://github.com/user-attachments/assets/038905a8-3064-44c1-8eb7-e14cc6da94ab)](https://dark-controller.com/wp-content/uploads/2024/07/KALO_VoiceAssitant_Video01.mp4)
 
 <br>
-Featured video from other users & friends (using my Deepgram transcription STT library in their IoT projects:<br>
-@techiesms: 'FASTEST! Speech to Text Conversion using ESP32 Board': https://www.youtube.com/watch?v=j0EEFXmikvk 
+Featured video from other users & friends (using my Deepgram transcription STT library in their IoT projects):<br>
+@techiesms: 'FASTEST! Speech to Text Conversion using ESP32 Board': https://www.youtube.com/watch?v=j0EEFXmikvk<br> 
 @techiesms: 'Portable AI Voice Assistant using ESP32 & Gemini AI': https://www.youtube.com/watch?v=zvR9DTfMwPE 
 
