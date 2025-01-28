@@ -65,8 +65,5 @@ Short video clip, presenting Recording & SpeechToText & TextToSpeech (without Op
 
 <br>
 Featured video from other users & friends (using my Deepgram transcription STT library in their IoT projects):<br>
-@techiesms: 'FASTEST! Speech to Text Conversion using ESP32 Board': https://www.youtube.com/watch?v=j0EEFXmikvk<br> 
-@techiesms: 'Portable AI Voice Assistant using ESP32 & Gemini AI': https://www.youtube.com/watch?v=zvR9DTfMwPE 
-
-@techiesms: [FASTEST! Speech to Text Conversion using ESP32 Board](https://www.youtube.com/watch?v=j0EEFXmikvk) <br>
-@techiesms: [Portable AI Voice Assistant using ESP32 & Gemini AI](https://www.youtube.com/watch?v=zvR9DTfMwPE)
+@techiesms (August 2024): [FASTEST! Speech to Text Conversion using ESP32 Board](https://www.youtube.com/watch?v=j0EEFXmikvk) <br>
+@techiesms (August 2024): [Portable AI Voice Assistant using ESP32 & Gemini AI](https://www.youtube.com/watch?v=zvR9DTfMwPE)
