@@ -1,3 +1,6 @@
+
+**... the libraries in this repository are outdated, you will find latest latest lib_xy() versions [here](https://github.com/kaloprojects/KALO-ESP32-Voice-Chat-AI-Friends)**
+
 # Summary
 Code snippets showing how to _record I2S audio_ and store as .wav file on ESP32 with SD card, how to _transcribe_ pre-recorded audio via _STT (SpeechToText)_ Deepgram API, how to _generate audio_ from text via _TTS (TextToSpeech)_ API from Google TTS or OpenAI TTS or (new) SpeechGen.IO. Triggering ESP32 actions via Voice.
 
