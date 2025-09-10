@@ -26,8 +26,8 @@ Explore the demo use case examples in main sketch, summary:
 - RGB LED (status indicator) and Analog Poti (audio volume)
 
 # Installation & Customizing
-- Required (Jan. 2025): Arduino IDE with ESP32 lib 3.1.x (based on ESP-IDF 5.3.x). Older 2.x ESP framework fail because new I2S driver missed
-- Required (for playing Audio on ESP32): AUDIO.H library [ESP32-audioI2S.zip](https://github.com/schreibfaul1/ESP32-audioI2S). Install latest zip  (3.0.11g from July 18, 2024 or newer)
+- Required (Jan. 2025): Arduino IDE with ESP32 lib 3.1.x (based on ESP-IDF 5.3.x). Older 2.x ESP framework fails because new I2S driver missed
+- Required (for playing Audio on ESP32): AUDIO.H library [ESP32-audioI2S.zip](https://github.com/schreibfaul1/ESP32-audioI2S). Install latest zip (3.0.11g from July 18, 2024 or newer)
 - Copy all .ino files of 'KALO-ESP32-Voice-Assistant' into same folder (it is one sketch, split into multiple Arduino IDE tabs)
 - Update your pin assignments & wlan settings (ssid, password) in the .ino header files
 - Update headers with personal credentials (Deepgram API key, optional: OpenAI API key, SpeechGen Token)
@@ -41,16 +41,16 @@ Explore the demo use case examples in main sketch, summary:
 - TTS: Only OpenAI voices are multi-lingual (supporting multiple languages in same request), Google & SpeechGen.IO request language specific parameter/voices
 
 # Updates
-- 2025-01-06: NEW library for TTS Speechgen.IO (hundreds of voices) 
+- 2025-01-06: NEW library for TTS SpeechGen.IO (hundreds of voices) 
 - 2025-01-06: Cleaned code, connection reliability issues solved, response time improved
 - 2024-07-22: Misc. enhancements, WifiClientSecure reliability workarounds, code cleaned up
 - 2024-07-18: 'Play 8bit audio' issue solved (latest AUDIO.H support 8bit wav format)
-- 2024-07-14: WifiClientSecure connection reliablility improved (still not perfect)
+- 2024-07-14: WifiClientSecure connection reliability improved (still not perfect)
 - 2024-07-14: STT Deepgram response faster (typical response time on e.g. 5 sec voice record: ~ 2.5 sec).
 - 2024-07-08: First drop, already working, not finally cleaned up (just posted this drop on some folks request)
 
 # Next steps
-- currently no major updates planned, enjoy the libraries :)
+- Currently no major updates planned, enjoy the libraries :)
 - I will add another project (repository) soon: 'ESP32 Voice OpenAI ChatGPT device' (using same C libraries). <br>2025-01-28 Update: Done. See repository: https://github.com/kaloprojects/KALO-ESP32-Voice-ChatGPT
 
 
