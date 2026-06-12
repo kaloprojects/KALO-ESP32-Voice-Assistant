@@ -30,18 +30,28 @@
 
 // --- PRIVATE credentials -----
 
-const char* ssid =        "...";          // ### INSERT your wlan ssid 
-const char* password =    "...";          // ### INSERT your password  
+const char* ssid =        "...";          // ### INSERT your wlan ssid
+const char* password =    "...";          // ### INSERT your password
 const char* OPENAI_KEY =  "...";          // ### INSERT your OpenAI key
- 
-// --- user preferences -------- 
+// (60db.ai API key + voice_id are defined in lib_60db.ino header)
+
+// --- user preferences --------
 
 #define AUDIO_FILE        "/Audio.wav"    // mandatory, filename for the AUDIO recording
 #define WELCOME_FILE      "/Welcome.wav"  // optionally, 'Hello' file will be played once on start (e.g. a gong or voice)
+#define TTS_60DB_FILE     "/tts_60db.wav" // temp file: 60db synthesized speech is decoded to SD here, then played
 
-#define TTS_GOOGLE_LANGUAGE   "en"        // needed for Google TTS voices only (not needed for multilingual OpenAI voices :) 
+#define TTS_GOOGLE_LANGUAGE   "en"        // needed for Google TTS voices only (not needed for multilingual OpenAI voices :)
                                           // examples: en-US, en-IN, en-BG, en-AU, nl-NL, nl-BE, de-DE, th-TH etc.
                                           // more infos: https://cloud.google.com/text-to-speech/docs/voices
+
+// --- Provider selection (run 60db 'along with' Deepgram, pick the active engine here) --------------------------------
+#define ENGINE_DEEPGRAM   1               // STT only
+#define ENGINE_OPENAI     2               // TTS only
+#define ENGINE_60DB       3               // STT + TTS (60db.ai)
+
+#define STT_ENGINE        ENGINE_60DB     // ### choose SpeechToText engine: ENGINE_DEEPGRAM or ENGINE_60DB
+#define TTS_ENGINE        ENGINE_60DB     // ### choose default speak-back engine: ENGINE_OPENAI or ENGINE_60DB
 
 // --- PIN assignments ---------
 
@@ -71,6 +81,10 @@ bool    Record_Available( String filename, float* audiolength_sec );
 
 String  SpeechToText_Deepgram( String filename );
 void    Deepgram_KeepAlive();
+
+String  SpeechToText_60db( String filename );                       // 60db.ai STT  (lib_60db.ino)
+String  TextToSpeech_60db( String text, String out_filename );      // 60db.ai TTS  (lib_60db.ino) -> returns SD path or ""
+void    Voices_60db();                                              // 60db.ai: optional, print your voice_id list
 
 
 
@@ -162,10 +176,14 @@ void loop()
         /*audio_play.connecttoFS(SD, AUDIO_FILE );              // play your own recorded audio  
         while (audio_play.isRunning()) {audio_play.loop();}     // wait here until done (just for Demo purposes)  */
         
-        // ## Demo 2 [SpeechToText] - Transcript the Audio (waiting here until done) 
-        led_RGB(HIGH,HIGH,LOW);  // BLUE means: 'Deepgram server creates transcription'
-        
-        String transcription = SpeechToText_Deepgram( AUDIO_FILE );  
+        // ## Demo 2 [SpeechToText] - Transcript the Audio (waiting here until done)
+        led_RGB(HIGH,HIGH,LOW);  // BLUE means: 'STT server creates transcription'
+
+        #if STT_ENGINE == ENGINE_60DB
+          String transcription = SpeechToText_60db( AUDIO_FILE );      // 60db.ai STT
+        #else
+          String transcription = SpeechToText_Deepgram( AUDIO_FILE );  // Deepgram STT
+        #endif
         
         led_RGB(HIGH,LOW,HIGH);  // GREEN means: 'Ready for recording'
         Serial.println(transcription);
@@ -224,13 +242,22 @@ void loop()
            // More info: https://platform.openai.com/docs/guides/text-to-speech/text-to-speech
            // keep in mind: OpenAI registration needed, enter your personal key in header #define OPENAI_KEY
     
-           // Demo example [by DEFAULT always]: .. speaking with an OpenAI voice (select one of the 6 voices by random)
+           // Demo example [by DEFAULT always]: .. speaking back the transcription with the selected TTS_ENGINE
+        #if TTS_ENGINE == ENGINE_60DB
+           // 60db.ai TTS: synthesize -> base64 WAV decoded to SD -> play via Audio.h (consistent with the record/play path)
+           Serial.println( "60db speaking: [" + transcription + "]" );
+           if ( TextToSpeech_60db( transcription, TTS_60DB_FILE ) != "" )
+           {  audio_play.connecttoFS( SD, TTS_60DB_FILE );   // non-blocking, played by audio_play.loop() at end of loop()
+           }
+        #else
+           // OpenAI TTS: 'human sounding' multilingual voices (select one of the 6 voices by random)
            String Voices[6] = { "alloy", "echo", "fable", "onyx", "nova", "shimmer" };
            int random_voice = random(6);
            Serial.println( "OpenAI '" + Voices[random_voice] + "' speaking: [" + transcription +"]");
-           
+
            // Play TTS OpenAI
-           audio_play.openai_speech(OPENAI_KEY, "tts-1", transcription.c_str(), Voices[random_voice], "mp3", "1");  
+           audio_play.openai_speech(OPENAI_KEY, "tts-1", transcription.c_str(), Voices[random_voice], "mp3", "1");
+        #endif
            
            
            // ## Demo 6 - Trigger any ESP32 actions via voice (example: say ".. give me a rainbow ..")
