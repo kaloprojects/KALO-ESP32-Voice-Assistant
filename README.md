@@ -41,6 +41,7 @@ Explore the demo use case examples in main sketch, summary:
 - TTS: Only OpenAI voices are multi-lingual (supporting multiple languages in same request), Google & SpeechGen.IO request language specific parameter/voices
 
 # Updates
+- 2026-08-24: Minor bug fix in TTS SpeechGen.IO (library also compatible to [KALO-ESP32-Voice-Chat-AI-Friends](https://github.com/kaloprojects/KALO-ESP32-Voice-Chat-AI-Friends)) 
 - 2025-01-06: NEW library for TTS SpeechGen.IO (hundreds of voices) 
 - 2025-01-06: Cleaned code, connection reliability issues solved, response time improved
 - 2024-07-22: Misc. enhancements, WifiClientSecure reliability workarounds, code cleaned up
